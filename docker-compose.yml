@@ -1,0 +1,14 @@
+services:
+  solr9:
+    image: utp-local-solr:9.2.1
+    container_name: services_solr9
+    volumes:
+      - ./data/solr9/core:/var/solr/data:rw
+
+    ports:
+      - 8984:8986
+
+networks:
+  default:
+    name: $DOCKER_NETWORK
+    external: true

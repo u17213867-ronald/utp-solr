@@ -1,0 +1,27 @@
+{
+  "authentication": {
+    "class": "solr.BasicAuthPlugin",
+    "blockUnknown": true,
+    "credentials": {
+      "solrAdmin": "NmMeMoFH6veSyV8zJ8xDoZC/lRRk2uULMpj/4ClzFkE= ZGlxbWVsc3M3M2J0dmVtbQ=="
+    },
+    "realm": "Usuario solar",
+    "forwardCredentials": false
+  },
+  "authorization": {
+    "class": "solr.RuleBasedAuthorizationPlugin",
+    "permissions": [
+      {
+        "name": "security-edit",
+        "role": "admin"
+      },
+      {
+        "name": "security-read",
+        "role": "admin"
+      }
+    ],
+    "user-role": {
+      "solrAdmin": "admin"
+    }
+  }
+}

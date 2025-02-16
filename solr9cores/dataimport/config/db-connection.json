@@ -1,0 +1,114 @@
+{
+  "advertisement": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_siri_talent_finder",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "lead": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_lead",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "autocomplete": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_neoauto",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "santander_ubigeo": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_listing",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "santander_profession": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_listing",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "empresa_sunat": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_neoauto",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "agencia_ingreso": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_neoauto",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  },
+  "santander_financial_profile": {
+    "mysql-neo": {
+      "jdbc": "jdbc:mysql://services_mysql8:3306/db_finance",
+      "user": "root",
+      "pass": "123456"
+    },
+    "solr": {
+      "timeout": 30,
+      "host": "solr9",
+      "port": 8986,
+      "user": "solrAdmin",
+      "pass": "solrAdmin"
+    }
+  }
+}

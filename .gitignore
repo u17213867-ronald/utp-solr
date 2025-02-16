@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+zoo.cfg
+cores/
+data/
+data/solr5/
+data/solr9/
+solr9cores/dataimport/__pycache__/
+solr9cores/dataimport/utils/__pycache__/

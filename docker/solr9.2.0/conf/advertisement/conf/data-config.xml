@@ -1,0 +1,55 @@
+<dataConfig>
+    <document>
+        <entity name="aviso"
+                pk="id"
+                fullQuery="
+                          SELECT 
+                              a.id as advertisementId,
+                              *
+                          FROM
+                              announcement a
+                                  INNER JOIN
+                              announcement_position ap ON a.id = ap.announcement_id
+                                  INNER JOIN
+                              announcement_study ae ON a.id = ae.announcement_id
+                                  INNER JOIN
+                          announcement_study ae ON a.id = ae.announcement_id"
+                deltaImporQuery="
+                          SELECT 
+                              a.id as advertisementId,
+                              *
+                          FROM
+                              announcement a
+                                  INNER JOIN
+                              announcement_position ap ON a.id = ap.announcement_id
+                                  INNER JOIN
+                              announcement_study ae ON a.id = ae.announcement_id
+                                  INNER JOIN
+                          announcement_study ae ON a.id = ae.announcement_id
+                          WHERE a.id in {delta_id}"
+                lastImportQuery="
+                          SELECT 
+                              a.id as advertisementId,
+                              *
+                          FROM
+                              announcement a
+                                  INNER JOIN
+                              announcement_position ap ON a.id = ap.announcement_id
+                                  INNER JOIN
+                              announcement_study ae ON a.id = ae.announcement_id
+                                  INNER JOIN
+                          announcement_study ae ON a.id = ae.announcement_id
+                          WHERE a.publication_date > '{last_time}'"
+        >
+            <field name="id" column="advertisementId"/>
+            <field name="title" column="title"/>
+            <field name="description" column="description"/>
+            <field name="userCompanyId" column="user_company_id"/>
+            <field name="locationId" column="location_id"/>
+            <field name="publicationDate" column="publication_date"/>
+            <field name="publicationStatus" column="publication_status"/>
+ 
+
+        </entity>
+    </document>
+</dataConfig>
